@@ -8,8 +8,11 @@ const NavBar = props => {
   const renderSearchBar = () => (
     <SearchMoviesContext.Consumer>
       {value => {
-        const {onTriggerSearchingQuery, onChangeSearchInput, searchInput} =
-          value
+        const {
+          onTriggerSearchingQuery,
+          onChangeSearchInput,
+          searchInput,
+        } = value
 
         const onChangeHandler = event => onChangeSearchInput(event.target.value)
 
